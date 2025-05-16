@@ -13,61 +13,57 @@ body {
     height: 100vh;
     background: var(--bg-primario-gradient);
     color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.fondo{
+.contenedor-principal {
+    position: relative;
+    margin-top: 2em;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    color: black;
 }
+
 .imagen {
     border-radius: 50%;
-    display: block;
-    height: 272px;
-    width: 270px;
-    margin: 2em auto;
-    mix-blend-mode: multiply;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .container {
-
-    padding: 2em;
-    border-radius: 1em;
-    backdrop-filter: blur(5px);
+    margin-top: 100px;
+    background-color: white;
+    padding: 3em 2em 2em 2em;
+    border-radius: 2em;
     width: 90%;
     max-width: 400px;
     text-align: center;
-    margin: auto;
-    mix-blend-mode: multiply;
-    color: black;
-    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    position: relative;
 }
 
-.titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+
+
+.titulo {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+.mini {
+    font-size: 0.9em;
+    margin-bottom: 1em;
     color: black;
 }
-.mini{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;;
-    color: black;
-}
-.parrafo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: gray;
+
+.parrafo {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: #444;
 }
 .agregar {
     width: 100%;
@@ -82,12 +78,30 @@ body {
     margin-top: 1em;
 }
 
-h3{
-    text-align: right;
-    justify-content: space-between;
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
     color: black;
 }
-h2{
-    text-align: left;
+
+.contador button {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.precio-contador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+.precio {
+    font-size: 1.8em;
     color: black;
+    margin: 0;
 }
