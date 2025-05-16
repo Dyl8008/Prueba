@@ -24,16 +24,13 @@ body {
 }
 .imagen {
     border-radius: 50%;
-    margin-bottom: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: 272px;
-    width: 270;
-    margin: auto;
+    width: 270px;
+    margin: 2em auto;
     mix-blend-mode: multiply;
-    color: black;
 }
+
 .container {
 
     padding: 2em;
@@ -74,17 +71,17 @@ body {
 }
 .agregar {
     width: 100%;
-    height: 3.4em;
+    padding: 1em;
     background-color: black;
-    color: rgb(255, 255, 255);
-    border-radius: .25em;
+    color: white;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     font-weight: bold;
-    text-align: center;
-    line-height: 2.4em;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    margin-top: 1em;
 }
+
 h3{
     text-align: right;
     justify-content: space-between;
